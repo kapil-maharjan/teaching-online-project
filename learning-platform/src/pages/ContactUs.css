@@ -1,0 +1,130 @@
+.single-form-container {
+  max-width: 550px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px;
+  margin: 120px auto 50px auto;
+  box-sizing: border-box;
+}
+
+.entry-form {
+  background: #fdfdfd;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.entry-form h3 {
+  margin-bottom: 20px;
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #4a5568;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.submit-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Success notification message layout block style */
+.success-alert {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #16a34a;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* MOBILE RESPONSIVE FIX */
+@media screen and (max-width: 480px) {
+  .single-form-container {
+    /* 55px mobile header height + 150px gap = 205px */
+    margin: 80px auto 30px auto;
+    padding: 0 15px; /* Slightly tighter horizontal padding for smaller mobile screens */
+  }
+
+  .entry-form {
+    padding: 20px; /* Reduces inner form padding so it fits nicely on phone screens */
+    border-radius: 6px;
+  }
+
+  .entry-form h3 {
+    font-size: 16px; /* Scales down the title size slightly for mobile readability */
+    margin-bottom: 15px;
+  }
+
+  .input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 13px; /* Slightly smaller label text */
+    color: #4a5568;
+  }
+
+  .input-group label {
+    font-size: 10px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 10px; /* Smaller input text */
+    outline: none;
+  }
+}

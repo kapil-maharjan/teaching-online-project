@@ -1,0 +1,97 @@
+#gallery {
+  width: 100%; /* Or your desired width */
+  overflow: hidden; /* CRITICAL: Hides slides that are waiting on the right side */
+  position: relative;
+}
+
+/* 1. Ensure the slides container arranges tracks horizontally */
+#slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth scrolling transition */
+}
+
+/* 2. The Viewport Frame: This centers the image inside it */
+.slide {
+  min-width: 100%; /* Crucial: Makes each slide track segment occupy full slider width */
+  display: flex; /* Turns on Flexbox styling rules */
+  justify-content: center; /* Horizontally centers your fixed-size image */
+  align-items: center; /* Vertically centers your fixed-size image */
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Button  */
+
+.btn-cloud {
+  background-color: #3498db; /* Cloud color */
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px 15px;
+  border-radius: 50px;
+  z-index: 1;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+}
+
+.btn-cloud:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.btn-cloud:active {
+  transform: translateY(1px); /* Press down effect */
+}
+
+#btn-subjects {
+  display: grid;
+  grid-template-columns: 225px 225px 225px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-top: 10px;
+  column-gap: 7px;
+  row-gap: 7px;
+}
+
+.front-image {
+  margin-top: 100px;
+  width: 1000px;
+  height: 700px;
+  border-radius: 25px;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .front-image {
+    margin-top: 80px;
+    width: 300px;
+    height: 200px;
+  }
+
+  #btn-subjects {
+    grid-template-columns: 180px 180px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-cloud {
+    font-size: 16px;
+  }
+
+  .para-intro {
+    padding: 0 15px;
+    text-align: justify;
+    text-indent: 20px;
+  }
+}

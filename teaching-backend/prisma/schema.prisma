@@ -1,0 +1,27 @@
+// 1. Configure the database engine connection parameters
+datasource db {
+  provider = "postgresql"
+}
+
+// 2. Generate the Prisma Client runtime library for your project
+generator client {
+  provider = "prisma-client-js"
+  output = "../generated/prisma"
+}
+
+// 3. Define the Teacher Model Schema
+model Teacher {
+  id               Int      @id @default(autoincrement())
+  email            String   @unique
+  password         String
+  firstName        String
+  surName          String
+  dateOfBirth      String   
+  mobileNo         String
+  lineId           String?  // The "?" makes this optional since lineId can be blank
+  currentLocation  String
+  highestEducation String
+  preferSubjects   String   // Stores the stringified JSON checklist array from Multer
+  idCardPath       String   // Stores the string file location on your disk space
+  createdAt        DateTime @default(now())
+}

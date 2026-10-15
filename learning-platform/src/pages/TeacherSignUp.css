@@ -1,0 +1,121 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 40px 20px;
+  font-family: system-ui, sans-serif;
+  margin-top: 100px;
+}
+
+.signup-card {
+  padding: 35px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.signup-subtitle {
+  color: #65676b;
+  margin-bottom: 25px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e4e6eb;
+}
+
+.checkbox-label {
+  display: flex !important;
+  flex-direction: row !important; /* Force items to line up horizontally */
+  align-items: center !important; /* Center things perfectly vertically */
+  justify-content: flex-start !important; /* Start from the left edge */
+  gap: 12px !important; /* Space out the checkbox from text */
+  font-size: 14px;
+  cursor: pointer;
+  color: #4b4b4b;
+  width: 100%;
+  text-align: left !important;
+}
+
+.form-checkbox {
+  width: 16px !important;
+  height: 16px !important;
+  cursor: pointer;
+  flex-shrink: 0 !important; /* Prevents the checkbox from squeezing or resizing */
+  margin: 0 !important;
+}
+
+.file-input {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #a94442;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background-color: #f2dede;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ebccd1;
+}

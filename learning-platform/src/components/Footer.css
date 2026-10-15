@@ -1,0 +1,91 @@
+.button-icon {
+  height: 40px;
+  width: 40px;
+}
+
+#next-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 180px;
+  padding-left: 10px;
+  background-color: rgb(250, 205, 3);
+  margin-top: 17px;
+}
+
+/* 1. Arrange the two links neatly side-by-side or stacked */
+.center-point {
+  display: flex;
+  gap: 20px; /* Space between the two main links */
+  flex-wrap: wrap; /* Allows wrapping on small mobile screens */
+  padding: 10px;
+}
+
+/* 2. Perfect alignment inside each link using Grid */
+.center-point a {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Icon takes its own width, text takes the rest */
+  align-items: center; /* Vertically centers the text and icon perfectly */
+  column-gap: 8px; /* Space between the icon and the text */
+  text-decoration: none; /* Removes default underline from link */
+  color: #333; /* Your preferred text color */
+  transition: background-color 0.15s;
+}
+
+/* 3. Optional: Ensure icons behave predictably */
+.marks {
+  width: 24px; /* Set a fixed size for your icons */
+  height: 24px;
+  object-fit: contain;
+}
+
+.center-point a:hover {
+  text-decoration: underline;
+  background-color: rgb(230, 219, 219);
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  width: 100%;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .btn-cloud {
+    font-size: 14px;
+  }
+
+  #next-steps {
+    font-size: 12px;
+  }
+
+  .marks {
+    width: 20px; /* Set a fixed size for your icons */
+    height: 20px;
+    object-fit: contain;
+  }
+
+  .button-icon {
+    height: 16px;
+    width: 16px;
+  }
+
+  .footer-section {
+    font-size: 12px;
+  }
+
+  footer {
+    height: 60px;
+  }
+}

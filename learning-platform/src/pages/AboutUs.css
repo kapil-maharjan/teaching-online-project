@@ -1,0 +1,42 @@
+.para-aboutus-intro {
+  text-indent: 25px;
+  padding: 150px 12px 0;
+  text-align: justify;
+}
+
+.para-two {
+  margin-top: 12px;
+  text-indent: 25px;
+  padding: 0 12px;
+  text-align: justify;
+}
+
+.image-container {
+  width: 800px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.teaching-unsplash {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+@media screen and (max-width: 480px) {
+  .para-aboutus-intro {
+    text-indent: 25px;
+    padding: 70px 12px 0;
+    text-align: justify;
+  }
+
+  .image-container {
+    width: 350px;
+    height: 300px;
+  }
+
+}

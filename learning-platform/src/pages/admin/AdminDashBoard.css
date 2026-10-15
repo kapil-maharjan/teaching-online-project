@@ -1,0 +1,60 @@
+.loading {
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+  position: relative;
+  top: 20px; /* ต่อจาก nav bar สีเขียว (สูง 90px) */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* No-wrap for table cells */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table th,
+.table td {
+  white-space: nowrap;
+}
+
+.new-row {
+  background-color: #fff3cd;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
