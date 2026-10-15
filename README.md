@@ -88,7 +88,7 @@ Ensure you have the following installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/kapil-maharjan/teaching-online-project.git
    cd teaching-online-project
    ```
 
